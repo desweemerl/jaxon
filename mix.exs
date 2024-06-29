@@ -6,7 +6,7 @@ defmodule Jaxon.MixProject do
       app: :jaxon,
       name: "Jaxon",
       version: "2.0.8",
-      elixir: "~> 1.7",
+      elixir: "~> 1.15",
       compilers: [:elixir_make] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -61,10 +61,10 @@ defmodule Jaxon.MixProject do
       {:jason, ">= 0.0.0", only: [:bench, :test, :docs]},
       {:jiffy, ">= 0.0.0", only: :bench},
       {:ex_doc, ">= 0.0.0", only: [:docs, :dev]},
-      {:dialyxir, "~> 1.0.0-rc.7", only: [:test, :dev], runtime: false},
+      {:dialyxir, "~> 1.4", only: [:test, :dev], runtime: false},
       {:inch_ex, github: "rrrene/inch_ex", only: [:docs, :test]},
       {:elixir_make, "~> 0.4", runtime: false},
-      {:excoveralls, "~> 0.8", only: :test}
+      {:excoveralls, "~> 0.18", only: :test}
     ]
   end
 end

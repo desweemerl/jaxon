@@ -22,5 +22,6 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 jaxon-*.tar
 
+c_src/*.o
 priv/decoder.so
 bench/output
